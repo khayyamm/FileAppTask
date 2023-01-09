@@ -12,8 +12,7 @@
 1. Open a command prompt in the Data folder and execute the following commands:
 
     ```
-    dotnet restore
-    dotnet tool restore
+   
     dotnet ef --startup-project ../FileAppTask.API migrations add InitialMigration --context FileContext
     dotnet ef --startup-project ../FileAppTask.API database update InitialMigration --context FileContext
     ```
